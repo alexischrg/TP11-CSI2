@@ -4,24 +4,40 @@ class Complex:
         self.__imaginaire = b
 
     def __add__(self, other):
-        self.__reel = self.__reel + other.__reel
-        self.__imaginaire = self.__imaginaire + other.__imaginaire
-        return self.__reel and self.__imaginaire
+        a = self.__reel
+        b = self.__imaginaire
+        c = other.__reel
+        d = other.__imaginaire
+        self.__reel = a+c
+        self.__imaginaire = b+d
+        return (self.__reel, self.__imaginaire)
 
     def __sub__(self, other):
-        self.__reel = self.__reel - other.__reel
-        self.__imaginaire = self.__imaginaire - other.__imaginaire
-        return self.__reel and self.__imaginaire
+        a = self.__reel
+        b = self.__imaginaire
+        c = other.__reel
+        d = other.__imaginaire
+        self.__reel = a-c
+        self.__imaginaire = b-d
+        return (self.__reel ,self.__imaginaire)
 
     def __mul__(self, other):
-        self.__reel = self.__reel * other.__reel
-        self.__imaginaire = self.__imaginaire * other.__imaginaire
-        return self.__reel and self.__imaginaire
+        a = self.__reel
+        b = self.__imaginaire
+        c = other.__reel
+        d = other.__imaginaire
+        reel = a*c - b*d
+        imaginaire = a*d + b*c
+        return (reel , imaginaire)
 
     def __truediv__(self, other):
-        self.__reel = self.__reel / other.__reel
-        self.__imaginaire = self.__imaginaire / other.__imaginaire
-        return self.__reel and self.__imaginaire
+        a = self.__reel
+        b = self.__imaginaire
+        c = other.__reel
+        d = other.__imaginaire
+        reel = (a*c + b*d)/(c*c + d*d)
+        imaginaire = (b*c - a*d)/(c*c + d*d)
+        return (reel, imaginaire)
 
     def __abs__(self):
         valabs = ((self.__reel)**2+(self.__imaginaire)**2)**0.5
@@ -41,13 +57,17 @@ class Complex:
 
 
 if __name__ == '__main__':
-    c1 = Complex(-2,3)
-    c2 = Complex(3,0)
+    c1 = Complex(1,2)
+    c2 = Complex(2, 1)
     c3 = c1 + c2
     c4 = c1 - c2
     c5 = c1 * c2
-    c5 = c1 / c2
-    c6 = abs(c1)
-    c1 == c2
-    c1 != c2
+    c6 = c1 / c2
+    c7 = abs(c1)
+    print(c1 == c2)
+    print(c1 != c2)
     print(c3)
+    print(c4)
+    print(c5)
+    print(c6)
+    print(c7)
