@@ -3,7 +3,7 @@ class Circle:
         self.__r = ray
 
     def __add__(self, other):
-        return Circle(self.__r + other.__r, self.__r + other.__r)
+        return Circle(self.__r + other.__r)
 
     def __lt__(self, other):
         return self.__r < other.__r and self.__r <other.__r
