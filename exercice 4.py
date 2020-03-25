@@ -4,12 +4,6 @@ class Duree:
         self.__minute = m
         self.__seconde = s
 
-    def afficher(self):
-        h = self.__heure
-        m = self.__minute
-        s = self.__seconde
-        print(h,'h',m,'m',s,'s')
-
     def __add__(self, other):
         h = self.__heure
         m = self.__minute
@@ -25,11 +19,13 @@ class Duree:
         h += other.__heure
         return Duree(h,m,s)
 
+    def __str__(self):
+        return (str(self.__heure) + "h" + str(self.__minute) + "m" + str(self.__seconde) + "s")
 
 
 if __name__ == '__main__':
     dur1 = Duree(13,15,50)
     dur2 = Duree(1,50, 12)
     durtot = dur1 + dur2
-    dur1.afficher()
-    durtot.afficher()
+    print(dur1)
+    print(durtot)

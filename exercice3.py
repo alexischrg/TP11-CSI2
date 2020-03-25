@@ -63,7 +63,8 @@ class Rational:
         den = a*d
         return (num,den)
 
-
+    def __str__(self):
+        return ("(" + str(self.__num) + "/" + str(self.__den) + ")")
 
 
 if __name__ == '__main__':

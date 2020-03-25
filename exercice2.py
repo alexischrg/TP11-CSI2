@@ -55,6 +55,8 @@ class Complex:
         else:
             return False
 
+    def __str__(self):
+        return ("(", str(self.__reel) + "," + str(self.__imaginaire) + ")")
 
 if __name__ == '__main__':
     c1 = Complex(1,2)

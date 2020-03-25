@@ -11,6 +11,9 @@ class Circle:
     def __gt__(self, other):
         return self.__r > other.__r and self.__r > other.__r
 
+    def __str__(self):
+        return ("r = " + str(self.__r))
+
 if __name__== '__main__' :
     c1 = Circle(2)
     c2 = Circle(3)
