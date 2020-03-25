@@ -27,9 +27,9 @@ class Duree:
 
 
 
-
-dur1 = Duree(13,15,50)
-dur2 = Duree(1,50, 12)
-durtot = dur1 + dur2
-dur1.afficher()
-durtot.afficher()
+if __name__ == '__main__':
+    dur1 = Duree(13,15,50)
+    dur2 = Duree(1,50, 12)
+    durtot = dur1 + dur2
+    dur1.afficher()
+    durtot.afficher()
