@@ -8,18 +8,18 @@ class Complex:
         b = self.__imaginaire
         c = other.__reel
         d = other.__imaginaire
-        self.__reel = a+c
-        self.__imaginaire = b+d
-        return (self.__reel, self.__imaginaire)
+        reel = a+c
+        imaginaire = b+d
+        return (reel, imaginaire)
 
     def __sub__(self, other):
         a = self.__reel
         b = self.__imaginaire
         c = other.__reel
         d = other.__imaginaire
-        self.__reel = a-c
-        self.__imaginaire = b-d
-        return (self.__reel ,self.__imaginaire)
+        reel = a-c
+        imaginaire = b-d
+        return (reel ,imaginaire)
 
     def __mul__(self, other):
         a = self.__reel
