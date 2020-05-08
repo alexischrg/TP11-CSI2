@@ -68,18 +68,19 @@ class Rational:
 
 
 if __name__ == '__main__':
-    c1 = Rational(1,2)
-    c2 = Rational(2,4)
+    c1 = Rational(1, 2)
+    c2 = Rational(2, 4)
+    """Autres essais : 
     #c2 = Rational(-1,2)
     #c1 = Rational(1,2)
     #c1 = Rational(1,-2)
-    #c2 = Rational(-1,-2)
-    c3 = c1 + c2
-    c4 = c1 - c2
-    c5 = c2 - c1
-    c6 = c1 * c2
-    c7 = c1 / c2
-    c8 = c2 / c1
+    #c2 = Rational(-1,-2)"""
+    c3 = c1 + c2  # (8,8)
+    c4 = c1 - c2  # (0,8)
+    c5 = c2 - c1  # (0,8)
+    c6 = c1 * c2  # (2,8)
+    c7 = c1 / c2  # (4,4)
+    c8 = c2 / c1  # (4,4)
     print(c3)
     print(c4)
     print(c5)
