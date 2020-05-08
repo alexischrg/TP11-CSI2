@@ -84,9 +84,9 @@ if __name__ == '__main__':
     t4 = Mat2 - Mat1
     t5 = Mat1 * Mat2
     t6 = Mat2 * Mat1
-    print(t1)
-    print(t2)
-    print(t3)
-    print(t4)
-    print(t5)
-    print(t6)
+    print(t1) #[3,3/3,3]
+    print(t2) #[3,3/3,3]
+    print(t3) #[-1,1/-1,1]
+    print(t4) #[1,-1/1,-1]
+    print(t5) #après calcul : [6,3/6,3]
+    print(t6) #après calcul : [3,6/3,6]
