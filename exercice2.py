@@ -66,10 +66,10 @@ if __name__ == '__main__':
     c5 = c1 * c2
     c6 = c1 / c2
     c7 = abs(c1)
-    print(c1 == c2)
-    print(c1 != c2)
-    print(c3)
-    print(c4)
-    print(c5)
-    print(c6)
-    print(c7)
+    print(c1 == c2)  # False
+    print(c1 != c2)  # True
+    print(c3)  # (3,3)
+    print(c4)  # (-1,1)
+    print(c5)  # (0,5)
+    print(c6)  # (0.8,0.6)
+    print(c7)  # (sqrt(5)) = 2.236...
